@@ -4,6 +4,6 @@ FIRST_LINE=`grep -n  ' 12:1' downnodes |tail -1| gawk -F: '{ print $1 }'`
 LAST_LINE=`cat downnodes| wc -l`
 #FIRST_LINE=1
 #LAST_LINE=5
-export LANG="en_US.UTF-8"#不加此行，crontab执行会有问题，crontab的环境变量没有跟shell的一致
-sed -n "$FIRST_LINE,$LAST_LINE"p  downnodes | mail -s "DOWN NODES" zhanght@cdcloud.org
+export LANG="en_US.UTF-8"#锟斤拷锟接达拷锟叫ｏ拷crontab执锟叫伙拷锟斤拷锟斤拷锟解，crontab锟侥伙拷锟斤拷锟斤拷锟斤拷没锟叫革拷shell锟斤拷一锟斤拷
+sed -n "$FIRST_LINE,$LAST_LINE"p  downnodes | mail -s "DOWN NODES" someone's@email
 
